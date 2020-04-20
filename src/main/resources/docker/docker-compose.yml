@@ -4,6 +4,8 @@ services:
     restart: always
     container_name: docker-mysql
     image: mysql
+    networks:
+      finartz_network:       
     environment:
       MYSQL_DATABASE: airlines
       MYSQL_ROOT_PASSWORD: weLcOme2.
@@ -21,10 +23,13 @@ services:
     expose:      
       - "10222"
     ports:
-      - 10222:10222
+      - 10222:10222  
     networks:
-      - spring-boot-mysql-network      
+      finartz_network:       
     environment:
       WAIT_HOSTS: mysql:3306
     depends_on:
       - docker-mysql     
+
+networks:
+  finartz_network:       
