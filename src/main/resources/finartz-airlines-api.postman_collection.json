@@ -1,0 +1,373 @@
+{
+	"info": {
+		"_postman_id": "4f29d9ea-f6a0-4f6d-b239-95ec67a61b72",
+		"name": "finartz-airlines-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List-Airlines",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{host_url}}:8080/airlines",
+					"protocol": "http",
+					"host": [
+						"{{host_url}}"
+					],
+					"port": "8080",
+					"path": [
+						"airlines"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create-Airlines",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"companyCode\": \"THY\",\r\n  \"companyName\": \"Türk Hava Yolları\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{host_url}}/airlines/create",
+					"protocol": "http",
+					"host": [
+						"{{host_url}}"
+					],
+					"path": [
+						"airlines",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List-Airports",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{host_url}}/airport",
+					"protocol": "http",
+					"host": [
+						"{{host_url}}"
+					],
+					"path": [
+						"airport"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Route-Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"destinationCity\": \"Adana\",\r\n  \"destinationCountry\": \"Türkiye\",\r\n  \"sourceCity\": \"İstanbul\",\r\n  \"sourceCountry\": \"Türkiye\",\r\n   \"routeDetail\": [\r\n    {\r\n      \"fromIataCode\": \"IST\",\r\n      \"toIataCode\": \"ADA\"\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{host_url}}/route/create",
+					"protocol": "http",
+					"host": [
+						"{{host_url}}"
+					],
+					"path": [
+						"route",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List-Routes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{host_url}}/route",
+					"protocol": "http",
+					"host": [
+						"{{host_url}}"
+					],
+					"path": [
+						"route"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Airport-Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"countryIsoCode\": \"TR\",\r\n  \"iataCode\": \"ADA\",\r\n  \"name\": \"Adana Şakirpaşa Havaalanı\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{host_url}}/airport/create",
+					"protocol": "http",
+					"host": [
+						"{{host_url}}"
+					],
+					"path": [
+						"airport",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight-Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"airlinesCompanyCode\": \"PEGASUS\",\r\n  \"arrival\": \"Adana\",\r\n  \"arrivalDate\": \"2020-04-19T19:00:00.273Z\",\r\n  \"departure\": \"İstanbul\",\r\n  \"departureDate\": \"2020-04-19T20:00:00.273Z\",\r\n  \"passengerCapacityCount\": 80,\r\n  \"routeCode\": \"FA-R-1\",\r\n  \"standardTicketPrice\": 400\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{host_url}}/flight/create",
+					"protocol": "http",
+					"host": [
+						"{{host_url}}"
+					],
+					"path": [
+						"flight",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight-List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{host_url}}/flight",
+					"protocol": "http",
+					"host": [
+						"{{host_url}}"
+					],
+					"path": [
+						"flight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight-Booking-Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"flightCode\": \"FA-FC-1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{host_url}}/flight-booking/create",
+					"protocol": "http",
+					"host": [
+						"{{host_url}}"
+					],
+					"path": [
+						"flight-booking",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List-Flight-Booking-By-Ticket-Number",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{host_url}}/flight-booking/ticket/9A7to8wl",
+					"protocol": "http",
+					"host": [
+						"{{host_url}}"
+					],
+					"path": [
+						"flight-booking",
+						"ticket",
+						"9A7to8wl"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cancel-Flight-Booking-By-Ticket-Number",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/flight-booking/ticket/cancel/9A7to8wl",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flight-booking",
+						"ticket",
+						"cancel",
+						"9A7to8wl"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List-Flight-Bookings",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{host_url}}/flight-booking",
+					"protocol": "http",
+					"host": [
+						"{{host_url}}"
+					],
+					"path": [
+						"flight-booking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List-Flight-Booking-By-Booking-Code",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{host_url}}/flight-booking/FA-FB-1",
+					"protocol": "http",
+					"host": [
+						"{{host_url}}"
+					],
+					"path": [
+						"flight-booking",
+						"FA-FB-1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List-Flight-Booking-By-Ticket-Number",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{host_url}}/flight-booking/ticket/mY7RPzut",
+					"protocol": "http",
+					"host": [
+						"{{host_url}}"
+					],
+					"path": [
+						"flight-booking",
+						"ticket",
+						"mY7RPzut"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cancel-Flight-Booking-By-Ticket-Number",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://{{host_url}}/flight-booking/ticket/cancel/mY7RPzut",
+					"protocol": "http",
+					"host": [
+						"{{host_url}}"
+					],
+					"path": [
+						"flight-booking",
+						"ticket",
+						"cancel",
+						"mY7RPzut"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "9123598b-d3be-4e90-b05a-966a6dff183a",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "5b435faa-4fc3-41cf-b710-d8c5866d8939",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "a3525243-58bd-4e3e-8244-f1acf9577bad",
+			"key": "host_url",
+			"value": "192.168.147.2:8080",
+			"type": "string"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
