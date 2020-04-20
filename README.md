@@ -59,7 +59,7 @@ docker-compose up
 
 #### Access the Home screen
 
-Postman collection api lerin kullanımı için hazırlanmıştır. Collection içinde tanımlanmış olan base_url variablında server host adresi değiştirilir.
+Postman collection api lerin kullanımı için hazırlanmıştır. Collection içinde tanımlanmış olan base_url değişkeni ile server host adresi değiştirilir.
 
 The application will be available at the URL: http://server_url:8080.
 
