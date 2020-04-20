@@ -8,7 +8,7 @@ Spring boot ile REST api Spring MVC, Spring Data JPA kullanılmıştır.
 
 Swagger dökümanı incelenerek apilerin tanımlarına ve kullanılma payloadlarına ulaşılır http://server_url:8080/swagger-ui.html
 
-Postman collection source kodun kök dizinindedir.
+Postman collection src/main/resource altındadır.
 
 ## Features
 
@@ -61,9 +61,9 @@ docker-compose up
 
 Postman collection api lerin kullanımı için hazırlanmıştır. Collection içinde tanımlanmış olan base_url variablında server host adresi değiştirilir.
 
-The application will be available at the URL: [Home](http://server_url:8080).
+The application will be available at the URL: http://server_url:8080.
 
-The application swager dökümantasyonu URL : [Home](http://server_url:8080/swagger-ui.html).  adresindedir.
+The application swager dökümantasyonu URL : http://server_url:8080/swagger-ui.html.  adresindedir.
 
 
 
