@@ -5,7 +5,6 @@
  */
 package com.finartz.airlines.ticketing.repository;
 
-import com.finartz.airlines.ticketing.entity.Airport;
 import com.finartz.airlines.ticketing.entity.Route;
 import java.util.List;
 import java.util.Optional;

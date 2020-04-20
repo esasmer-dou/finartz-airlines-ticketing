@@ -6,7 +6,6 @@
 package com.finartz.airlines.ticketing.flight;
 
 import com.finartz.airlines.ticketing.entity.Flight;
-import com.finartz.airlines.ticketing.entity.Route;
 import java.util.List;
 import java.util.Optional;
 

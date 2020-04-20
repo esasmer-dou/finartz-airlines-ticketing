@@ -5,7 +5,6 @@
  */
 package com.finartz.airlines.ticketing.flghtbooking;
 
-import com.finartz.airlines.ticketing.entity.Flight;
 import com.finartz.airlines.ticketing.entity.FlightBooking;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;

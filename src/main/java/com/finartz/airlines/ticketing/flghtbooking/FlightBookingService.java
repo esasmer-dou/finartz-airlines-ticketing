@@ -5,7 +5,6 @@
  */
 package com.finartz.airlines.ticketing.flghtbooking;
 
-import com.finartz.airlines.ticketing.entity.Airport;
 import com.finartz.airlines.ticketing.entity.FlightBooking;
 import java.util.List;
 import java.util.Optional;
