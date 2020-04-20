@@ -3,9 +3,7 @@ services:
   docker-mysql:
     restart: always
     container_name: docker-mysql
-    image: mysql:5.7
-    networks:
-      - spring-boot-mysql-network    
+    image: mysql
     environment:
       MYSQL_DATABASE: airlines
       MYSQL_ROOT_PASSWORD: weLcOme2.
@@ -29,8 +27,4 @@ services:
     environment:
       WAIT_HOSTS: mysql:3306
     depends_on:
-      - docker-mysql
-      
-networks:
-  spring-boot-mysql-network:
-    driver: bridge
+      - docker-mysql     
