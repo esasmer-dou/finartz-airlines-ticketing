@@ -35,7 +35,7 @@ Postman collection src/main/resource altındadır.
 #### Clone this repo
 	
 
-git clone https://github.com/esasmer-dou/finartz-airlines-ticketing.git
+git clone https://github.com/esasmer-dou/airlines-ticketing.git
 
 
 
