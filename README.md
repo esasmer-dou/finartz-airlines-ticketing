@@ -1,8 +1,8 @@
-# finartz-airlines-ticketing
-Finartz Candiate Developer Assesment Project. Airlines Flight Booking Ticketing Backend System
+# airlines-ticketing
+Airlines Flight Booking Ticketing Backend System
 
 
-# Finartz Flight Booking API Application
+# Flight Booking API Application
 
 Spring boot ile REST api Spring MVC, Spring Data JPA kullanılmıştır.
 
